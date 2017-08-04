@@ -1,0 +1,6 @@
+# Rolling a server back
+# ----------------------
+# If something goes wrong with the current release (let's say a new bug was introduced)
+# then you can simply rollback to the previously stable deployment.
+---
+ - include: "{{ deploy_root }}/plays/web/rollback.yml"

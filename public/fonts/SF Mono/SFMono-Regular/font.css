@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SFMono-Regular';
+  src: url('SFMono-Regular.eot');
+  src: url('SFMono-Regular.woff2') format('woff2'),
+       url('SFMono-Regular.woff') format('woff'),
+       url('SFMono-Regular.ttf') format('truetype'),
+       url('SFMono-Regular.svg#SFMono-Regular') format('svg'),
+       url('SFMono-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

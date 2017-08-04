@@ -1,0 +1,7 @@
+# Deploying a server
+# ----------------------
+# When you are ready to deploy your first release of the project to your server,
+# you will use this playbook. Once you start the playbook, it will pull in the
+# project, install everything necessary for that project, and release it.
+---
+ - include: "{{ deploy_root }}/plays/web/deploy.yml"

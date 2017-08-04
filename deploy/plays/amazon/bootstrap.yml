@@ -1,0 +1,14 @@
+# Bootstrap a server
+# ----------------------
+# Bootstrapping a server involves creating the server on the chosen hosting provider,
+# and provisioning that server based upon the chosen stack (LAMP, MEAN, LEMP). This
+# can also include the creation of any third-party storage or database server(s).
+---
+ - include: "{{ deploy_root }}/plays/amazon/servers/web/create.yml"
+ - include: "{{ deploy_root }}/plays/amazon/servers/web/secure.yml"
+ - include: "{{ deploy_root }}/plays/servers/web/lamp.yml"
+# - include: "{{ deploy_root }}/plays/amazon/servers/database/create.yml"
+# - include: "{{ deploy_root }}/plays/amazon/storage/s3/create.yml"
+ - include: "{{ deploy_root }}/plays/amazon/servers/web/destroy.yml"
+# - include: "{{ deploy_root }}/plays/amazon/servers/database/destroy.yml"
+# - include: "{{ deploy_root }}/plays/amazon/storage/s3/destroy.yml"
